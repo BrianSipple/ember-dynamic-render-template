@@ -23,7 +23,7 @@ export default Component.extend({
         layout: compileTemplate(this.get('templateString') || ''),
       });
 
-      let ComponentFactory = owner.factoryFor('component:render-template');
+      let ComponentFactory = owner.factoryFor('component:render-template-result');
       let componentInstance = ComponentFactory.create(props);
       let container = document.createElement('div');
 
